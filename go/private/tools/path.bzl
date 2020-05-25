@@ -12,12 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
 load(
     "@io_bazel_rules_go//go/private:providers.bzl",
     "GoArchive",
     "GoPath",
     "effective_importpath_pkgpath",
     "get_archive",
+)
+load(
+    "@io_bazel_rules_go//go/private:context.bzl",
+    "go_context",
 )
 load(
     "@io_bazel_rules_go//go/private:common.bzl",
